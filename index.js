@@ -64,22 +64,22 @@
 
 
 
-function login(error,msg){
-    if(error){
-        console.log("login failed : "+ error);
-    }
-    else{
-        console.log("Login successfull : "+msg);
-    }
-}
+// function login(error,msg){
+//     if(error){
+//         console.log("login failed : "+ error);
+//     }
+//     else{
+//         console.log("Login successfull : "+msg);
+//     }
+// }
 
-function loginhandler(username,password,clbk){
-    if(username=="sahil" && password=="2121"){
-        clbk(null,"login success")
-    }
-    else{
-        clbk("Usrname or password is incorrect",null)
-    }
-}
+// function loginhandler(username,password,clbk){
+//     if(username=="sahil" && password=="2121"){
+//         clbk(null,"login success")
+//     }
+//     else{
+//         clbk("Usrname or password is incorrect",null)
+//     }
+// }
 
-loginhandler("sahil","2121",login)
+// loginhandler("sahil","2121",login)
