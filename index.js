@@ -87,3 +87,34 @@
 // console.log("one")
 // setTimeout(()=>{console.log("Two")},1000)
 // console.log("three")
+
+const container=document.getElementById("container");
+const button=document.getElementById("btn")
+// console.log(container);
+// console.log(button);
+
+
+        const h1 = document.createElement('h1');
+        console.log(h1);
+        
+        h1.innerText='Abes Engg College';
+        
+function ping(){
+    try{
+            //alert("server ping");
+            container.innerHTML='<h2>Welcome to DOM</h2>';
+
+            const img = document.createElement("img");
+            
+            img.src='https://w.wallhaven.cc/full/7j/wallhaven-7jeozo.jpg';
+            img.setAttribute('height',200);
+            img.setAttribute('width',200);
+            container.appendChild(img);
+        
+        }catch{
+                console.log("error");
+        }
+    }
+
+
+button.addEventListener('click',ping);
