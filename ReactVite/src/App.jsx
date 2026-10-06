@@ -21,13 +21,14 @@
 
 import { useState } from 'react';
 import ImageManipulation from './components/ImageManipulation';
+import MyUseEffect from './components/MyUseEffect';
 
 function App() {
 return (
     <div>
     <div>
 
-        <ImageManipulation />
+        <FetchProducts/>
         
       </div>
 
