@@ -13,6 +13,9 @@ function Home() {
             <li>
                 <Link to='/register'>Register</Link>
             </li>
+            <l1>
+                <Link to='/dashboard'>Dashboard</Link>
+            </l1>
         </ul>
       </nav>
     </div>
