@@ -22,16 +22,30 @@
 import { useState } from 'react';
 import ImageManipulation from './components/ImageManipulation';
 import MyUseEffect from './components/MyUseEffect';
+import FetchProducts from './components/FetchProduct';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Registration from './components/Registration';
+import Dashboard from './components/Dashboard';
+import Home from './components/Home';
 
 function App() {
 return (
     <div>
-    <div>
+      <BrowserRouter>
+      
+      <Routes>
 
-        <FetchProducts/>
-        
-      </div>
+        <Route path='/login' element={<Login />}> </Route>
+        <Route path='/register' element={<Registration />}> </Route>
+        <Route path='/dashboard' element={<Dashboard />}> </Route>
+        <Route path='/' element={<Home />}> </Route>
 
+
+
+      </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
